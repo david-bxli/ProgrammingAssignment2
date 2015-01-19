@@ -2,7 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+#this funciton will be used to store original data, the input matrix, and inversed matrix. 
 makeCacheMatrix <- function(x = matrix()) {
 	#initial m tobe NULL
 	m<-NULL
@@ -29,7 +29,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+#this funtion will detect if cached inversed matrix is available. 
+#If yes, return the cached inversed matrix to prevent unneccessary process
+#Otherwise, process the original matrix to inversed version and save it to makeCacheMatrhx function
 cacheSolve <- function(x, ...) {
 	#try to get cached matrix
 	m<-x$getMatrix()
